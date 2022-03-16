@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">食材管理アプリ</string>
+
+    <string name="tv_food_add_title">食材追加画面</string>
+    <string name="tv_food_name">食材名</string>
+    <string name="tv_food_stock">在庫数</string>
+    <string name="tv_food_stock_unit">単位</string>
+    <string name="tv_purchase_count">購入時の最小個数</string>
+    <string name="tv_usage_count">使用時の最小個数</string>
+    <string name="bt_food_add">食材を追加する</string>
+    <string name="msg_input_check">未入力の欄があります。</string>
+    <string name="msg_foodname_check">は既に登録されています。</string>
+<!-- FoodDetailActivity関連 -->
+    <string name="bt_delete_food">削除する</string>
+    <string name="bt_update_stock">在庫数を更新する</string>
+    <string name="dialog_delete_title">確認</string>
+    <string name="dialog_delete_desc">削除しますか？</string>
+    <string name="dialog_bt_OK">はい</string>
+    <string name="dialog_bt_Cancel">いいえ</string>
+</resources>

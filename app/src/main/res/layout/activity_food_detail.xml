@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="foodName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFoodStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/tv_food_stock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodName" />
+
+    <EditText
+        android:id="@+id/etFoodStock"
+        android:layout_width="92dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="Stock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFoodStock" />
+
+    <Button
+        android:id="@+id/btIncreaseStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onIncreaseStock"
+        android:text="＋"
+        app:layout_constraintStart_toEndOf="@+id/etFoodStock"
+        app:layout_constraintTop_toBottomOf="@+id/tvFoodStock" />
+
+    <Button
+        android:id="@+id/btDecreaseStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="onDecreaseStock"
+        android:text="－"
+        app:layout_constraintEnd_toStartOf="@+id/etFoodStock"
+        app:layout_constraintTop_toBottomOf="@+id/tvFoodStock" />
+
+    <Button
+        android:id="@+id/btUpdateStock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="onUpdateStock"
+        android:text="@string/bt_update_stock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFoodStock" />
+
+    <Button
+        android:id="@+id/btDeleteFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onDeleteFood"
+        android:text="@string/bt_delete_food"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
